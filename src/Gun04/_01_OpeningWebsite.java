@@ -1,6 +1,6 @@
 package Gun04;
 
-import Utlity.MyFunc;
+import Utility.MyFunc;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 

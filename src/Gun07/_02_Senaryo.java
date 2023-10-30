@@ -15,12 +15,12 @@ package Gun07;
 //        Bu soruda tamamen XPATH kullanılacaktır.
 
 
-import Utlity.BaseDriver;
-import Utlity.MyFunc;
-import org.junit.Assert;
-import org.junit.Test;
+import Utility.BaseDriver;
+import Utility.MyFunc;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.util.List;
 
@@ -107,7 +107,7 @@ public class _02_Senaryo extends BaseDriver {
         Double itemtotal= Double.parseDouble( itemtotalElement.getText().replaceAll("[^0-9,.]","")   );
         System.out.println("itemtotal = " + itemtotal);
 
-        Assert.assertTrue("Değerler eşit değil", toplam== itemtotal);
+        Assert.assertTrue(toplam== itemtotal, "Değerler eşit değil");
 
         BekleVeKapat();
     }

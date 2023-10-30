@@ -1,6 +1,6 @@
 package Gun05;
 
-import Utlity.BaseDriver;
+import Utility.BaseDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
